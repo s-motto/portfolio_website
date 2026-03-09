@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sono", monospace;
+    background-color: #DBD8B3;
+
+}
+
+/*Intestazione e titolo */
+.plum {
+    background-color: #685369;
+    height: 40vmin;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    margin-top: -2px;
+}
+
+i{
+   background-color: transparent; 
+   
+}
+.plum h1 {
+    color: #DBD8B3;
+    text-align: left;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    background-color: transparent;
+    font-size: 4vw; 
+    margin: 0; 
+    
+}
+
+.plum p {
+    display: block; 
+    text-align: left;
+    color: #DBD8B3;
+    padding-left: 2.5vw;
+    background-color: transparent;
+    font-size: 1vw; 
+    margin: 0; 
+}
+
+ /* Menu di navigazione */
+ nav {
+    display: flex;
+    align-items: center;
+    background-color: #685369;
+    justify-content: flex-end;
+    padding: 1rem;;
+}
+
+.menu {
+    display: flex;
+   justify-content: flex-end;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #685369;
+}
+
+.menu li {
+    
+    margin-left: 30px;
+    background-color: #685369;
+    
+}
+
+.menu a {
+    
+    color: #DBD8B3;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 5px;
+    transition: all 0.3s ease;
+    background-color: #685369;
+    
+}
+
+.menu a:hover {
+   
+    background-color:  #FCC8B2;
+    color: #685369;
+    transition: 0.6s ease-in-out;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background-color: #685369;
+    border: none;
+    padding: 10px;
+    z-index: 102;
+}
+
+
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: #DBD8B3;
+    transition: all 0.3s ease;
+}
+
+ /* Stili per la trasformazione dell'hamburger quando attivo */
+ .hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Sezione "About Me"  */
+.about-me {
+    color: #685369;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    text-align: right; 
+    padding-right: 2vw; 
+    height: 35vmin;
+    width: 100%;
+}
+
+.about-me h2 {
+    
+    margin-top: -1rem; 
+    padding: 0; 
+    font-size: 2vw; 
+   
+}
+
+.about-me p {
+    width: 65%; 
+    margin: 0; 
+    
+    padding-top: 1vh; 
+    font-size: 1vw; 
+}
+
+.imp-point{
+    color: #685369;
+    font-weight: bold; 
+    background-color: #EFA48B;
+    padding: 0 0.5rem; 
+    border-radius: 5px; 
+}
+
+/* Sezione "Skills"  */
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #DBD8B3;
+    background-color: #685369;
+    height: auto;
+    min-height: 70vmin; 
+    width: 100%; 
+    clip-path: polygon(0 0, 100% 15%, 100% 80%, 0 100%); 
+    padding: 6rem 0.5rem 0.5rem 2rem; 
+}
+
+.skills h2{
+    background-color: #685369;
+    font-size: 2vw;
+    flex: 0 0 20%;
+    text-align: left;
+    align-self: flex-start;
+    padding-top: 2vh; 
+}
+
+.skills-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 75%;
+    background-color: #685369;
+    align-content: flex-start;
+    
+}
+
+.skills img{
+    background-color: #685369;
+    height: 10vmin;
+    width: 10vmin;
+    margin: 1rem;
+    flex: 0 0 calc(16.66% - 2rem);
+}
+/*Sezione "Projects"  */
+.projects{
+    color: #685369;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    text-align: right; 
+    padding-right: 2vw; 
+    height: 35vmin;
+    width: 100%;
+}
+
+.projects p{
+    width: 50%; 
+    margin: 0; 
+    
+    padding-top: 1vh; 
+    font-size: 1vw; 
+}
+
+/* Stile del footer */
+footer{
+    margin-top: -2px;
+    font-size: 0.8rem;
+    background-color: #EFA48B;
+}
+
+footer span{
+    background-color: #685369;
+    color: #EFA48B;
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    padding: 2px 5px; 
+    z-index: 100; 
+}
+
+
+/* Container per le card */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Le card vanno a capo se necessario */
+    justify-content: center; /* Centro orizzontalmente le card */
+    gap: 2rem; /* Spazio tra le card*/
+   margin-bottom: 2rem;
+  
+}
+
+/* Stile delle card */
+.card {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #685369;
+    box-shadow: 0 4px 8px rgba(104, 83, 105, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Effetto hover per le card */
+.card:hover {
+    transform: scale(1.05); /* allargo la card */
+    box-shadow: 0 8px 16px rgba(104, 83, 105, 0.5); /* Aumento l'ombra */
+    border-color: #EFA48B;
+}
+
+/* Card image */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* assicuro che l'immagine sia contenuta */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect per l'immagine */
+.card:hover img {
+    transform: scale(1.1); /* Zoom  dell'immagine */
+}
+
+/* Card title */
+.card h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DBD8B3;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 8px rgba(104, 83, 105, 0.8);
+    background-color: rgba(104, 83, 105, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+    pointer-events: none; /* Impedisco al titolo di interferire con l'hover */
+}
+
+/* Stile modale */
+.modal {
+    display: none; /* Nascosto di default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 83, 105, 0.85) !important; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #FCC8B2 !important;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 3px solid #685369;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(104, 83, 105, 0.5);
+}
+
+.modal-content img {
+    width: 100%;
+    height: 40vmin;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #FCC8B2;
+    
+}
+
+.modal-content h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    background-color: #FCC8B2;
+    color: #685369;
+    border-radius: 5px;
+
+}
+
+.modal-content p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #685369;
+    background-color: #FCC8B2;
+    border-radius: 5px;
+    line-height: 1.6;
+
+}
+
+.modal-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #685369;
+    color: #DBD8B3;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(104, 83, 105, 0.3);
+}
+
+.modal-content a:hover {
+    background-color: #EFA48B;
+    color: #685369;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(104, 83, 105, 0.4);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #685369;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close:hover {
+    background-color: rgba(104, 83, 105, 0.1);
+    transform: rotate(90deg);
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;   
+        padding-left: 5vw; 
+    }
+
+    .plum {
+        height: auto; 
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); 
+        padding: 3rem; 
+    }
+
+    .plum h1 {
+        font-size: 6vw; 
+        padding-top: 4vh;
+        padding-left: 4vw;
+    }
+
+    .plum p {
+        font-size: 3vw; 
+        padding-left: 4vw;
+    }
+
+
+    .about-me {
+        padding: 1.5rem 2rem 3rem 3rem; 
+        height: auto; 
+    }
+
+    .about-me h2 {
+        font-size: 4vw; 
+    }
+
+    .about-me p {
+        font-size: 2.5vw; 
+        width: 90%; 
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        align-items: center; 
+        height: auto; 
+        clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%); 
+        padding: 3.2rem; 
+    
+    }
+
+    .skills h2 {
+        font-size: 5vw; 
+        margin: 0;
+        text-align: left; 
+        
+    }
+
+    .skills img {
+        height: 8vmin; 
+        width: 8vmin; 
+        margin: 0.5rem; 
+        flex-basis: 10%; 
+        object-fit: contain; 
+    }
+   
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    
+    nav {
+        padding: 0;
+        justify-content: flex-end;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        background-color: #685369;
+        width: 70%;
+        height: 100vh;
+        z-index: 101;
+        padding-top: 60px;
+        transition: right 0.3s ease;
+        justify-content: flex-start;
+    }
+    
+    .menu.active {
+        right: 0;
+    }
+    
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .menu a {
+        font-size: 1.5rem;
+        display: block;
+        padding: 10px;
+      
+    }
+
+    .projects {
+        padding: 1.5rem 2rem 3rem 3rem; 
+        height: auto; 
+        
+    }
+
+    .projects h2 {
+        font-size: 4vw; 
+    }
+
+    .projects p {
+        font-size: 2.5vw; 
+        width: 90%; 
+    }
+
+    
+
+}
