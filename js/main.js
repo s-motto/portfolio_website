@@ -1,42 +1,25 @@
-// Creo il pulsante hamburger
 document.addEventListener('DOMContentLoaded', function() {
-   
-    const hamburgerBtn = document.createElement('button');
-    hamburgerBtn.className = 'hamburger';
-    
-    // Creo le tre linee
-    for (let i = 0; i < 3; i++) {
-        const line = document.createElement('span');
-        hamburgerBtn.appendChild(line);
-    }
-    
-    // Inserisco il pulsante hamburger prima della nav
-    const nav = document.querySelector('nav');
-    nav.parentNode.insertBefore(hamburgerBtn, nav);
-    
-    // Aggiungo l'evento click al pulsante hamburger
+    const hamburgerBtn = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+
     hamburgerBtn.addEventListener('click', function() {
         this.classList.toggle('active');
-        document.querySelector('.menu').classList.toggle('active');
+        menu.classList.toggle('active');
     });
-    
+
     // Chiudo il menu quando viene cliccato un link
-    const menuLinks = document.querySelectorAll('.menu a');
-    menuLinks.forEach(link => {
+    document.querySelectorAll('.menu a').forEach(link => {
         link.addEventListener('click', function() {
             hamburgerBtn.classList.remove('active');
-            document.querySelector('.menu').classList.remove('active');
+            menu.classList.remove('active');
         });
     });
-    
+
     // Chiudo il menu quando si clicca fuori
     document.addEventListener('click', function(event) {
-        const isClickInsideMenu = nav.contains(event.target);
-        const isClickOnHamburger = hamburgerBtn.contains(event.target);
-        
-        if (!isClickInsideMenu && !isClickOnHamburger && document.querySelector('.menu').classList.contains('active')) {
+        if (!menu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
             hamburgerBtn.classList.remove('active');
-            document.querySelector('.menu').classList.remove('active');
+            menu.classList.remove('active');
         }
     });
 });
