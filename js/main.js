@@ -39,18 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dati dei progetti
     const projects = [
         {
+             title: 'Portfolio Site',
+             image: 'img/code.png',
+            description: 'This portfolio site! Built with HTML, CSS and vanilla JavaScript, using Bootstrap for the project cards.',
+             github: 'https://github.com/s-motto/portfolio_website'
+        },
+        {
             title: 'Hiking App',
             image: 'img/hikingapp.png',
             description: 'React web app that helps users find hiking trails around them. Includes GPS navigation, badges for achievements and GPX export. Are there thousands of similar apps? Yes. It feels good to have my own when I go hiking? Also yes.',
             github: 'https://github.com/s-motto/project-1',
             website: 'https://lets-walk-hiking-app.vercel.app/'
         },
-        {
-            title: 'Project 2',
-            image: 'img/code.png',
-            description: 'This is a description of Project 2.',
-            github: 'https://github.com/yourusername/project2'
-        },
+        
         {
             title: 'Project 3',
             image: 'img/code.png',
@@ -73,13 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            modalImage.src = project.image;
-            modalTitle.textContent = project.title;
-            modalDescription.textContent = project.description;
-            modalLink.href = project.github;
-            modalWebsite.href = project.website; 
+          modalImage.src = project.image;
+modalTitle.textContent = project.title;
+modalDescription.textContent = project.description;
+modalLink.href = project.github;
 
-            modal.style.display = 'flex'; 
+if (project.website) {
+    modalWebsite.href = project.website;
+    modalWebsite.style.display = 'inline-block';
+} else {
+    modalWebsite.style.display = 'none';
+}
+
+modal.style.display = 'flex'; 
         });
     });
 
