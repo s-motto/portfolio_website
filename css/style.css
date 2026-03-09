@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Sono", monospace;
-    background-color: #DBD8B3;
+   
 
+}
+
+body{
+     background-color: #DBD8B3;
 }
 
 /*Intestazione e titolo */
