@@ -251,11 +251,11 @@ nav {
 .contact {
     background-color: #685369 !important;
     color: #DBD8B3;
-     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     padding: 10rem 2rem 6rem 4rem;
     display: flex;
     flex-direction: column;
-     align-items: flex-start;
+    align-items: flex-start;
     text-align: left;
     gap: 1.5rem;
     width: 100%;
@@ -266,22 +266,47 @@ nav {
     font-size: 2vw;
 }
 
+.contact p {
+    background-color: transparent;
+    font-size: 1vw;
+    color: #DBD8B3;
+    opacity: 0.85;
+}
+
 .contact-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     background-color: transparent;
+    flex-wrap: wrap;
 }
 
 .contact-links a {
-    color: #DBD8B3;
+    color: #685369;
     text-decoration: none;
-    font-size: 1.2rem;
-    background-color: transparent;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    background-color: #DBD8B3;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .contact-links a:hover {
-    color: #EFA48B;
+    background-color: #EFA48B;
+    color: #685369;
+    transform: translateY(-2px);
+}
+
+/* Stile del footer */
+footer {
+    background-color: #DBD8B3;
+    padding: 0.5rem 1rem;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #685369;
 }
 
 /* Stile modale */
@@ -376,16 +401,6 @@ nav {
 .close:hover {
     background-color: rgba(104, 83, 105, 0.1);
     transform: rotate(90deg);
-}
-
-/* Stile del footer */
-footer {
-    margin-top: -2px;
-    font-size: 0.8rem;
-    background-color: #EFA48B;
-    padding: 0.5rem 1rem;
-    text-align: right;
-    color: #685369;
 }
 
 /* Media query per dispositivi mobili */
@@ -509,6 +524,10 @@ footer {
 
     .contact h2 {
         font-size: 5vw;
+    }
+
+    .contact p {
+        font-size: 3vw;
     }
 
     .contact-links {
