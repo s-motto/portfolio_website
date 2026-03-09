@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: 'img/hikingapp.png',
             description: 'React web app that helps users find hiking trails around them. Includes GPS navigation, badges for achievements and GPX export. Are there thousands of similar apps? Yes. It feels good to have my own when I go hiking? Also yes.',
             github: 'https://github.com/s-motto/project-1',
-            website: 'https://lets-walk-hiking-app.vercel.app/'
+            website: 'https://github.com/user-attachments/assets/25f54abb-e63a-47e7-a376-31660a736e5e'
         },
         
         {
