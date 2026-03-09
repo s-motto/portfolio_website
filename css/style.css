@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Sono", monospace;
-   
-
 }
 
 body{
-     background-color: #DBD8B3;
+    background-color: #DBD8B3 !important;
 }
 
 /*Intestazione e titolo */
@@ -27,8 +25,8 @@ body{
 
 i{
    background-color: transparent; 
-   
 }
+
 .plum h1 {
     color: #DBD8B3;
     text-align: left;
@@ -37,7 +35,6 @@ i{
     background-color: transparent;
     font-size: 4vw; 
     margin: 0; 
-    
 }
 
 .plum p {
@@ -50,19 +47,18 @@ i{
     margin: 0; 
 }
 
- /* Menu di navigazione */
- nav {
+/* Menu di navigazione */
+nav {
     display: flex;
     align-items: center;
     background-color: #685369;
     justify-content: flex-end;
-    padding: 1rem;;
+    padding: 1rem;
 }
 
 .menu {
     display: flex;
-   justify-content: flex-end;
-
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -70,14 +66,11 @@ i{
 }
 
 .menu li {
-    
     margin-left: 30px;
     background-color: #685369;
-    
 }
 
 .menu a {
-    
     color: #DBD8B3;
     text-decoration: none;
     font-size: 1.2rem;
@@ -85,12 +78,10 @@ i{
     padding: 5px;
     transition: all 0.3s ease;
     background-color: #685369;
-    
 }
 
 .menu a:hover {
-   
-    background-color:  #FCC8B2;
+    background-color: #FCC8B2;
     color: #685369;
     transition: 0.6s ease-in-out;
 }
@@ -105,8 +96,6 @@ i{
     z-index: 102;
 }
 
-
-
 .hamburger span {
     display: block;
     width: 30px;
@@ -116,8 +105,7 @@ i{
     transition: all 0.3s ease;
 }
 
- /* Stili per la trasformazione dell'hamburger quando attivo */
- .hamburger.active span:nth-child(1) {
+.hamburger.active span:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
@@ -129,7 +117,7 @@ i{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Sezione "About Me"  */
+/* Sezione "About Me" */
 .about-me {
     color: #685369;
     display: flex;
@@ -142,17 +130,14 @@ i{
 }
 
 .about-me h2 {
-    
     margin-top: -1rem; 
     padding: 0; 
     font-size: 2vw; 
-   
 }
 
 .about-me p {
     width: 65%; 
     margin: 0; 
-    
     padding-top: 1vh; 
     font-size: 1vw; 
 }
@@ -165,8 +150,7 @@ i{
     border-radius: 5px; 
 }
 
-/* Sezione "Skills"  */
-
+/* Sezione "Skills" */
 .skills{
     display: flex;
     flex-direction: row;
@@ -197,7 +181,6 @@ i{
     flex: 0 0 75%;
     background-color: #685369;
     align-content: flex-start;
-    
 }
 
 .skills img{
@@ -207,7 +190,8 @@ i{
     margin: 1rem;
     flex: 0 0 calc(16.66% - 2rem);
 }
-/*Sezione "Projects"  */
+
+/* Sezione "Projects" */
 .projects{
     color: #685369;
     display: flex;
@@ -222,92 +206,50 @@ i{
 .projects p{
     width: 50%; 
     margin: 0; 
-    
     padding-top: 1vh; 
     font-size: 1vw; 
 }
 
-/* Stile del footer */
-footer{
-    margin-top: -2px;
-    font-size: 0.8rem;
-    background-color: #EFA48B;
-}
-
-footer span{
-    background-color: #685369;
-    color: #EFA48B;
-    position: fixed;
-    bottom: 0; 
-    right: 0; 
-    padding: 2px 5px; 
-    z-index: 100; 
-}
-
-
-/* Container per le card */
-.card-container {
-    display: flex;
-    flex-wrap: wrap; /* Le card vanno a capo se necessario */
-    justify-content: center; /* Centro orizzontalmente le card */
-    gap: 2rem; /* Spazio tra le card*/
-   margin-bottom: 2rem;
-  
-}
-
-/* Stile delle card */
-.card {
-    position: relative;
-    width: 15rem;
-    height: 15rem;
+/* Card progetti */
+.project-card {
+    border: 2px solid #685369 !important;
+    border-radius: 10px !important;
     overflow: hidden;
-    border-radius: 10px;
-    border: 2px solid #685369;
-    box-shadow: 0 4px 8px rgba(104, 83, 105, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(104, 83, 105, 0.3);
+    background-color: #685369 !important;
 }
 
-/* Effetto hover per le card */
-.card:hover {
-    transform: scale(1.05); /* allargo la card */
-    box-shadow: 0 8px 16px rgba(104, 83, 105, 0.5); /* Aumento l'ombra */
-    border-color: #EFA48B;
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(104, 83, 105, 0.5);
+    border-color: #EFA48B !important;
 }
 
-/* Card image */
-.card img {
+.project-card .card-img-top {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* assicuro che l'immagine sia contenuta */
+    height: 200px;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-/* Hover effect per l'immagine */
-.card:hover img {
-    transform: scale(1.1); /* Zoom  dell'immagine */
+.project-card:hover .card-img-top {
+    transform: scale(1.1);
 }
 
-/* Card title */
-.card h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.project-card .card-body {
+    background-color: #685369;
+}
+
+.project-card .card-body .card-title {
     color: #DBD8B3;
-    font-size: 1.5rem;
-    text-shadow: 0 2px 8px rgba(104, 83, 105, 0.8);
-    background-color: rgba(104, 83, 105, 0.7);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 1;
-    pointer-events: none; /* Impedisco al titolo di interferire con l'hover */
+    font-size: 1.2rem;
 }
 
 /* Stile modale */
 .modal {
-    display: none; /* Nascosto di default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -337,7 +279,6 @@ footer span{
     object-fit: contain;
     border-radius: 10px;
     background-color: #FCC8B2;
-    
 }
 
 .modal-content h2 {
@@ -346,7 +287,6 @@ footer span{
     background-color: #FCC8B2;
     color: #685369;
     border-radius: 5px;
-
 }
 
 .modal-content p {
@@ -356,7 +296,6 @@ footer span{
     background-color: #FCC8B2;
     border-radius: 5px;
     line-height: 1.6;
-
 }
 
 .modal-content a {
@@ -402,6 +341,23 @@ footer span{
     transform: rotate(90deg);
 }
 
+/* Stile del footer */
+footer{
+    margin-top: -2px;
+    font-size: 0.8rem;
+    background-color: #EFA48B;
+}
+
+footer span{
+    background-color: #685369;
+    color: #EFA48B;
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    padding: 2px 5px; 
+    z-index: 100; 
+}
+
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
     h1 {
@@ -426,7 +382,6 @@ footer span{
         padding-left: 4vw;
     }
 
-
     .about-me {
         padding: 1.5rem 2rem 3rem 3rem; 
         height: auto; 
@@ -450,14 +405,12 @@ footer span{
         height: auto; 
         clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%); 
         padding: 3.2rem; 
-    
     }
 
     .skills h2 {
         font-size: 5vw; 
         margin: 0;
         text-align: left; 
-        
     }
 
     .skills img {
@@ -467,7 +420,6 @@ footer span{
         flex-basis: 10%; 
         object-fit: contain; 
     }
-   
 
     .hamburger {
         display: block;
@@ -509,13 +461,11 @@ footer span{
         font-size: 1.5rem;
         display: block;
         padding: 10px;
-      
     }
 
     .projects {
         padding: 1.5rem 2rem 3rem 3rem; 
         height: auto; 
-        
     }
 
     .projects h2 {
@@ -526,7 +476,4 @@ footer span{
         font-size: 2.5vw; 
         width: 90%; 
     }
-
-    
-
 }
