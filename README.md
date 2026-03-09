@@ -4,6 +4,10 @@ My personal portfolio site. Nothing groundbreaking, but it's mine.
 
 🔗 **Live site**: [sabrina-motto.vercel.app](https://sabrina-motto.vercel.app/)
 
+
+https://github.com/user-attachments/assets/6dd27aee-1113-4799-ad63-6229fade9483
+
+
 ---
 
 ## About
