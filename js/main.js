@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         
         {
-            title: 'Project 3',
-            image: 'img/code.png',
-            description: 'This is a description of Project 3.',
-            github: 'https://github.com/yourusername/project3'
+            title: 'La Mia Pizzeria',
+    image: 'img/code.png',
+    description: 'A Spring Boot web app to manage a pizzeria — full CRUD for pizzas and ingredients, many-to-many relationships between them, promotional offers, and role-based authentication with Spring Security. Built during my back-end course in 2024. Unfinished, but the important parts work.',
+    github: 'https://github.com/s-motto/spring-la-mia-pizzeria-relazioni'
         }
     ];
 
