@@ -39,8 +39,3 @@ A single-page portfolio built from scratch to showcase my projects and skills. D
 
 Ongoing — new projects will be added as they are completed. The site itself is also one of the listed projects, which feels a bit recursive but here we are.
 
----
-
-## Acknowledgements
-
-Built with a lot of trial and error, and a helping hand from Claude for when, after 30 minutes of staring at my own code, I was ready to throw my laptop out the window.
