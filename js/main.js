@@ -38,27 +38,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dati dei progetti
     const projects = [
-        {
-             title: 'Portfolio Site',
-             image: 'img/code.png',
-            description: 'This portfolio site! Built with HTML, CSS and vanilla JavaScript, using Bootstrap for the project cards.',
-             github: 'https://github.com/s-motto/portfolio_website'
-        },
-        {
-            title: 'Hiking App',
-            image: 'img/hikingapp.png',
-            description: 'React web app that helps users find hiking trails around them. Includes GPS navigation, badges for achievements and GPX export. Are there thousands of similar apps? Yes. It feels good to have my own when I go hiking? Also yes.',
-            github: 'https://github.com/s-motto/project-1',
-            website: 'https://github.com/user-attachments/assets/25f54abb-e63a-47e7-a376-31660a736e5e'
-        },
-        
-        {
-            title: 'La Mia Pizzeria',
-    image: 'img/code.png',
-    description: 'A Spring Boot web app to manage a pizzeria — full CRUD for pizzas and ingredients, many-to-many relationships between them, promotional offers, and role-based authentication with Spring Security. Built during my back-end course in 2024. Unfinished, but the important parts work.',
-    github: 'https://github.com/s-motto/spring-la-mia-pizzeria-relazioni'
-        }
-    ];
+    {
+        title: 'Portfolio Site',
+        image: 'img/code.png',
+        description: 'This portfolio site! Built with HTML, CSS and vanilla JavaScript, using Bootstrap for the project cards.',
+        github: 'https://github.com/s-motto/portfolio_website'
+    },
+    {
+        title: 'Hiking App',
+        image: 'img/hikingapp.png',
+        description: 'React web app that helps users find hiking trails around them. Includes GPS navigation, badges for achievements and GPX export. Are there thousands of similar apps? Yes. It feels good to have my own when I go hiking? Also yes.',
+        github: 'https://github.com/s-motto/project-1',
+        website: 'https://github.com/user-attachments/assets/25f54abb-e63a-47e7-a376-31660a736e5e'
+    },
+    {
+        title: 'La Mia Pizzeria',
+        image: 'img/code.png',
+        description: 'A Spring Boot web app to manage a pizzeria — full CRUD for pizzas and ingredients, many-to-many relationships between them, promotional offers, and role-based authentication with Spring Security. Built during my back-end course in 2024. Unfinished, but the important parts work.',
+        github: 'https://github.com/s-motto/spring-la-mia-pizzeria-relazioni'
+    },
+    {
+        title: 'Gestionale Cooperativa',
+        image: 'img/code.png',
+        description: 'A full-stack web app built with Laravel 13 to manage the internal operations of a community cooperative. Features include a cash/bank ledger with Excel export, member registry with annual dues tracking, meeting minutes archive with PDF upload, and role-based access control.',
+        github: 'https://github.com/s-motto/cooperativa'
+    },
+    {
+        title: 'Zum Zeri',
+        image: 'img/code.png',
+        description: 'A website for Zum Zeri, a local business in the Zeri area.',
+        github: '' // aggiungi il link se ce l'hai
+    }
+];
 
     // Aggiungo l'evento click alle card
     const cards = document.querySelectorAll('.card');
